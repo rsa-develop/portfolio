@@ -28,7 +28,8 @@ use Cake\Routing\Router;
 
 // スコープ付きルートビルダーを使用。
 $routes->connect('/', ['controller' => 'Portfolio', 'action' => 'index']);
-$routes->connect('/portfolio/*', ['controller' => 'Portfolio', 'action' => 'index']);
+$routes->connect('/*', ['controller' => 'Portfolio', 'action' => 'index']);
+// $routes->connect('/portfolio/*', ['controller' => 'Portfolio', 'action' => 'index']);
 /*
  * The default class to use for all routes
  *
