@@ -91,7 +91,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; margin-left: -20vw; bottom: 0%;">
                   <transition name="slide-right-fade">
                     <div v-if="prefShowAnimNumber(1)">
-                      <img style="width: 100%;" src="/img/portfolio/tree1.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree1.png">
                     </div>
                   </transition>
                 </div>
@@ -99,7 +99,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; margin-left: -10vw; bottom: 10%;">
                   <transition name="slide-right-fade">
                     <div v-if="prefShowAnimNumber(3)">
-                      <img style="width: 100%;" src="/img/portfolio/tree3.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree3.png">
                     </div>
                   </transition>
                 </div>
@@ -107,7 +107,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; margin-left: 0vw; bottom: 8%;">
                   <transition name="slide-right-fade">
                     <div v-if="prefShowAnimNumber(5)">
-                      <img style="width: 100%;" src="/img/portfolio/tree5.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree5.png">
                     </div>
                   </transition>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; margin-left: 10vw; bottom: 15%;">
                   <transition name="slide-right-fade">
                     <div v-if="prefShowAnimNumber(7)">
-                      <img style="width: 100%;" src="/img/portfolio/tree7.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree7.png">
                     </div>
                   </transition>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; margin-left: 15vw; bottom: 12%;">
                   <transition name="slide-right-fade">
                     <div v-if="prefShowAnimNumber(9)">
-                      <img style="width: 100%;" src="/img/portfolio/tree9.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree9.png">
                     </div>
                   </transition>
                 </div>
@@ -131,7 +131,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; right: -20vw; bottom: 8%;">
                   <transition name="slide-left-fade">
                     <div v-if="prefShowAnimNumber(2)">
-                      <img style="width: 100%;" src="/img/portfolio/tree2.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree2.png">
                     </div>
                   </transition>
                 </div>
@@ -139,7 +139,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; right: -10vw; bottom: 5%;">
                   <transition name="slide-left-fade">
                     <div v-if="prefShowAnimNumber(4)">
-                      <img style="width: 100%;" src="/img/portfolio/tree4.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree4.png">
                     </div>
                   </transition>
                 </div>
@@ -147,7 +147,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; right: 0vw; bottom: 0%;">
                   <transition name="slide-left-fade">
                     <div v-if="prefShowAnimNumber(6)">
-                      <img style="width: 100%;" src="/img/portfolio/tree6.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree6.png">
                     </div>
                   </transition>
                 </div>
@@ -155,7 +155,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; right: 5vw; bottom: 14%;">
                   <transition name="slide-left-fade">
                     <div v-if="prefShowAnimNumber(8)">
-                      <img style="width: 100%;" src="/img/portfolio/tree8.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree8.png">
                     </div>
                   </transition>
                 </div>
@@ -164,7 +164,7 @@
                 <div class="pref-child" style="width: 40vw; height: 40vw; right: 10vw; bottom: 8%;">
                   <transition name="slide-left-fade">
                     <div v-if="prefShowAnimNumber(10)">
-                      <img style="width: 100%;" src="/img/portfolio/tree10.png">
+                      <img style="width: 100%;" src="https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/tree10.png">
                     </div>
                   </transition>
                 </div>
