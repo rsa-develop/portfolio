@@ -1,0 +1,144 @@
+/*-------------------------------------
+    Fade
+-------------------------------------*/
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .8s;  
+}
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+}
+  
+/*-------------------------------------
+    slideRightFade
+-------------------------------------*/
+
+.slide-right-fade-enter-active , .slide-right-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-fade-enter, .slide-right-fade-leave-to {
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideRightFadeLarge
+-------------------------------------*/
+
+.slide-right-fade-large-enter-active , .slide-right-fade-large-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-fade-large-enter, .slide-right-fade-large-leave-to {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideLeftFade
+-------------------------------------*/
+
+.slide-left-fade-enter-active , .slide-left-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-left-fade-enter, .slide-left-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideLeftFadeLarge
+-------------------------------------*/
+
+.slide-left-fade-large-enter-active , .slide-left-fade-large-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-left-fade-large-enter, .slide-left-fade-large-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideDownFade
+-------------------------------------*/
+
+.slide-down-fade-enter-active , .slide-down-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-down-fade-enter, .slide-down-fade-leave-to {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideDownFadeLarge
+-------------------------------------*/
+
+.slide-down-fade-large-enter-active , .slide-down-fade-large-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-down-fade-large-enter, .slide-down-fade-large-leave-to {
+    transform: translateY( -100% );
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideUpFade
+-------------------------------------*/
+
+.slide-up-fade-enter-active , .slide-up-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-up-fade-enter, .slide-up-fade-leave-to {
+    transform: translateY( 10px );
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideUpFadeLarge
+-------------------------------------*/
+
+.slide-up-fade-large-enter-active , .slide-up-fade-large-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-up-fade-large-enter, .slide-up-fade-large-leave-to {
+    transform: translateY( 100% );
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideLeftRotateFade
+-------------------------------------*/
+
+.slide-left-rotate-fade-enter-active , .slide-left-rotate-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-left-rotate-fade-enter, .slide-left-rotate-fade-leave-to {
+    transform: translateX(100px) rotateY( -360deg );
+    transform-origin:50% 50% 50%;
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideRightRotateFade
+-------------------------------------*/
+
+.slide-right-rotate-fade-enter-active , .slide-right-rotate-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-rotate-fade-enter, .slide-right-rotate-fade-leave-to {
+    transform: translateX(-100px) rotateY( -360deg );
+    transform-origin:50% 50% 50%;
+    opacity: 0;
+}
+
+/*-------------------------------------
+    slideFlatRotateFade
+-------------------------------------*/
+
+.slide-flat-rotate-fade-enter-active , .slide-flat-rotate-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-flat-rotate-fade-enter, .slide-flat-rotate-fade-leave-to {
+    transform: translateX(100px) rotateY( -180deg );
+    opacity: 0;
+}
