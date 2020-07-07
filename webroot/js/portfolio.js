@@ -1,4 +1,22 @@
-
+var images = [
+    '/img/portfolio/bg-red.jpg',
+    '/img/portfolio/tree1.png',
+    '/img/portfolio/tree2.png',
+    '/img/portfolio/tree3.png',
+    '/img/portfolio/tree4.png',
+    '/img/portfolio/tree5.png',
+    '/img/portfolio/tree6.png',
+    '/img/portfolio/tree7.png',
+    '/img/portfolio/tree8.png',
+    '/img/portfolio/tree9.png',
+    '/img/portfolio/tree10.png'
+]
+window.onload = function(){
+    for (i = 0; i < images.length; i++){
+        var img = document.createElement('img');
+        img.src = images[i];
+    }
+}
 
 new Vue({
     el: '#mainTabs',
@@ -8,7 +26,9 @@ new Vue({
         treeShowCount: 0,
         showFuture: false,
         showInterest: false,
-        tab4ShowCount: 0
+        tab4ShowCount: 0,
+        isHistoryShown: true ,
+        selectedHistoryCategory: 0 ,
     },
     components: {
     },
@@ -23,11 +43,25 @@ new Vue({
             this.current = id
             setTimeout(this.changeCompleation,10);
         },
+        changeHistoryCategory: function( category ) {
+            this.selectedHistoryCategory = category
+            this.switchHistoryShown()
+            setTimeout( this.switchHistoryShown ,1000);
+        },
+        isSelectedHistoryCategory: function( category ) {
+            if( this.selectedHistoryCategory == 0 ) {
+                return true
+            }
+            return this.selectedHistoryCategory == category
+        },
         prefShowAnimNumber: function( num ) {
             return this.treeShowCount >= num
         },
         tab4ShowAnimPeriod: function( startNum , endNum ) {
             return startNum <= this.tab4ShowCount && this.tab4ShowCount < endNum
+        },
+        switchHistoryShown() {
+            this.isHistoryShown = !this.isHistoryShown
         },
         changeCompleation: function() {
             setTabContentHeight()
@@ -72,7 +106,7 @@ new Vue({
             }
 
             if( this.current == 4 ) {
-                this.tab4ShowCount = parseInt( this.scrollY / ( window.outerHeight / 2.5 ) )
+                this.tab4ShowCount = parseInt( this.scrollY / ( window.innerHeight / 2.5 ) )
             }
         }
     }
@@ -87,6 +121,8 @@ function setTabContentHeight() {
         }
     }
 }
+
+setTabContentHeight()
 window.addEventListener( 'resize', function() {
     setTabContentHeight()
 
@@ -95,10 +131,3 @@ window.addEventListener( 'resize', function() {
         tab4Content.style.height = (window.innerHeight - document.getElementsByClassName( "tab" )[0].clientHeight) + "px";
     }
 }, false );
-setTabContentHeight()
-
-window.onload = function() {
-    setTimeout(function(){
-        window.scrollTo(0,1);
-    }, 1);
-}

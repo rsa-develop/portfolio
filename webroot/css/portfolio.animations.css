@@ -8,6 +8,17 @@
 .fade-enter, .fade-leave-to{
     opacity: 0;
 }
+
+/*-------------------------------------
+    Fade-sec1
+-------------------------------------*/
+
+.fade-sec1-enter-active, .fade-sec1-leave-active {
+    transition: opacity 1s;  
+}
+.fade-sec1-enter, .fade-sec1-leave-to{
+    opacity: 0;
+}
   
 /*-------------------------------------
     slideRightFade
