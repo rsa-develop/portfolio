@@ -42,9 +42,9 @@
                 <!-- /second -->
                 <div class="third">
                   <p style="font-size:120%;">
-                    閲覧いただきありがとうございます。<br>
-                    本ページは「Kohei Yamamoto」のポートフォリオページとなります。<br><br>
-                    経歴や保有スキル、基本理念から <span style="font-size:120%; color:red">どんな人間なのか</span> をご紹介できたら幸いです。
+                    こちらは「Kohei Yamamoto」のポートフォリオページとなります。<br><br>
+                    エンジニアとしての<span style="font-size:120%; font-weight: bold;">経験やスキル</span>をご紹介するとともに、<span style="font-size:120%; font-weight: bold;">自身の生い立ちやキャラクター</span>も知っていただきたいという想いで作成いたしました。<br><br>
+                    ご興味を持っていただけると幸いです。
                   </p>
                 </div>
                 <!-- /third -->
