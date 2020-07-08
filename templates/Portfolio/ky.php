@@ -48,8 +48,8 @@
                   </p>
                 </div>
                 <!-- /third -->
-                <div class="stripe-black" style="margin: 0 35%; margin-top: 5%;">
-                  <div class="stripe-green-inner" style="text-align: left; padding: 10% 15%">
+                <div class="stripe-black" style="margin: 0 25%; margin-top: 5%;">
+                  <div class="stripe-green-inner" style="text-align: left; padding: 10% 12%">
                     <a href="#self-introduction" style="font-size:140%;">1.自己紹介</a><br><br>
                     <a href="#strength" style="font-size:140%;">2.エンジニアとして得意なこと</a><br><br>
                     <a href="#character" style="font-size:140%;">3.キャラクター</a><br><br>
@@ -321,11 +321,11 @@
               <div class="tab-content" style="margin: 0 10px;">
                 <div style="margin-left:10px; margin-right:20px;">
                   <br>
-                  <h4 style="border-bottom: 1px solid #006e54;border-left: 10px solid #e66465;padding: 7px;">Amazon FireTVアプリ開発</h4>
+                  <h4 style="border-bottom: 1px solid #e66465;border-left: 10px solid #e66465;padding: 7px;">Amazon FireTVアプリ開発</h4>
                   <div>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"FireTV" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 02 月 ~ 2020 年 04 月" , "title"=>"AmazonFireTVアプリケーション新規開発業務" , "body"=>" 自社 FireTV アプリ開発<br>アプリの新規開発から動作テスト、デバッグ対応、リリースまでの一連の流れを担当。<br>AmazonDeveloperを用いたアプリ登録や課金テスト、FCM導入によるプッシュ通知の実装も致しました。<br>レイアウト作成においては、API連携による動的レイアウトを作成したほか、リモコン操作に準じたフォーカス移動を実装しました。" ]) ?>
                   </div>
-                  <h4 style="margin-top: 5%; border-bottom: 1px solid #ff8c00;border-left: 10px solid #da6abe;padding: 7px;">Androidアプリ開発</h4>
+                  <h4 style="margin-top: 5%; border-bottom: 1px solid #da6abe;border-left: 10px solid #da6abe;padding: 7px;">Androidアプリ開発</h4>
                   <div>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 01 月 ~ 2020 年 02 月" , "title"=>"Androidアプリ開発" , "body"=>"自社 Android アプリ開発<br>アプリの新規開発から動作テスト、デバッグ対応、リリースまでの一連の流れを担当。<br>GooglePlayへの登録やFCM導入によるプッシュ通知の実装等も致しました。" ]) ?>
                     <br>
@@ -333,7 +333,7 @@
                     <br>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 3人<br>期間 : 2020 年 04 月 ~ 2020 年 05 月" , "title"=>"フルリモート 新規長期運用形 Android アプリケーションの開発業務" , "body"=>"月額サブスクリプション型 運用アプリの構築<br>フルリモート環境下での企画仕様書の読解および展開から、API準拠の動的レイアウト構築やアニメーション作成のほか、Realm DB構築等の開発業務を担当。<br>また、新人エンジニアへのタスク分配および進捗管理など、チームの指揮をとる形で連携を図り開発を進めました。" ]) ?>
                   </div>
-                  <h4 style="margin-top: 5%; border-bottom: 1px solid #ff0000;border-left: 10px solid #9198e5;padding: 7px;">Webアプリ開発</h4>
+                  <h4 style="margin-top: 5%; border-bottom: 1px solid #9198e5;border-left: 10px solid #9198e5;padding: 7px;">Webアプリ開発</h4>
                     <div>
                       <?= $this->element('Portfolio/accordion' , [ "head"=>"Web" , "info"=>"platform : Web<br>人数 : 1人 <br>期間 : 2019 年 11 月 ~ 12月 <br>言語 : Java" , "title"=>"Web ECサイト構築" , "body"=>"Java,HTML,CSSを用いてグルメECサイトを作成 <br>企画部分から開発、テスト、リリースの全行程を担当したほか、管理用機能ページの作成もしました。" ]) ?>
                       <br>
@@ -634,7 +634,8 @@
                               <br>
                               ・普通自動車免許<br><br>
                               ・ライフコンサルタント<br><br>
-                              ・第６回観光論文コンテスト 観光庁長官賞受賞（最優秀賞）<br><br>
+                              ・第６回観光論文コンテスト<br>
+                                観光庁長官賞受賞（最優秀賞）<br><br>
                               ・L’oreal Brandstorm 世界大会出場<br><br>
                               ・早稲田大学文化賞<br>
                             </span>
