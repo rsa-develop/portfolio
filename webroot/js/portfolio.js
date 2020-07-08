@@ -1,23 +1,3 @@
-var images = [
-    '/img/portfolio/bg-red.jpg',
-    '/img/portfolio/tree1.png',
-    '/img/portfolio/tree2.png',
-    '/img/portfolio/tree3.png',
-    '/img/portfolio/tree4.png',
-    '/img/portfolio/tree5.png',
-    '/img/portfolio/tree6.png',
-    '/img/portfolio/tree7.png',
-    '/img/portfolio/tree8.png',
-    '/img/portfolio/tree9.png',
-    '/img/portfolio/tree10.png'
-]
-window.onload = function(){
-    for (i = 0; i < images.length; i++){
-        var img = document.createElement('img');
-        img.src = images[i];
-    }
-}
-
 let mainTab = new Vue({
     el: '#mainTabs',
     data: {
