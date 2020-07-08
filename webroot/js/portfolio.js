@@ -18,7 +18,7 @@ window.onload = function(){
     }
 }
 
-new Vue({
+let mainTab = new Vue({
     el: '#mainTabs',
     data: {
         current: 1,
@@ -72,9 +72,18 @@ new Vue({
         changeCompleation: function() {
             setTabContentHeight()
             scrollTo( 0 , 0 )
+
+            this.isHiddenHistoryCategories = true
+
             switch( this.current ) {
                 case 1: break;
-                case 2: break;
+                case 2: 
+                    setTimeout( function(){
+                        if ( !navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i) ) {
+                            mainTab.isHiddenHistoryCategories = false
+                        }
+                    } , 1000);                
+                    break;
                 case 3: break;
                 case 4: 
                     window.scrollTo( 0 , 0 );

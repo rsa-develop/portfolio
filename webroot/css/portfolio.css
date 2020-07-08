@@ -154,7 +154,7 @@ body {
 .profile-top .second { 
   -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
   clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
-  background: url(/img/portfolio/bg-red.jpg);
+  background: url(https://rensa.s3-ap-southeast-1.amazonaws.com/images/portfolio/k.s/bg-red.jpg);
   padding: 4% 0;
 }
 
