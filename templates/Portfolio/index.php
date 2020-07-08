@@ -255,7 +255,9 @@
 
             <div class="history-categories">
               <div>
-                <div>
+                <h6 class="hidden-history-categories-button" v-bind:class={'show-history-categories-button':isHiddenHistoryCategories} @click="hiddenHistoryCategories()">{{ hiddenHistoryCategoriesButtonTitle }}</h6>
+                
+                <div class="show-history-categories" v-bind:class={'hidden-history-categories':isHiddenHistoryCategories}>
                   <transition name="slide-left"><h6 class="history-category-button" v-bind:class={'is-selected-history-category':isSelectedHistoryCategory(0)} mode="out-in" @click="changeHistoryCategory(0)" name="all">All</h6></transition>
                   <transition name="slide-left"><h6 class="history-category-button" v-bind:class={'is-selected-history-category':isSelectedHistoryCategory(1)} mode="out-in" @click="changeHistoryCategory(1)" name="php">PHP</h6></transition>
                   <transition name="slide-left"><h6 class="history-category-button" v-bind:class={'is-selected-history-category':isSelectedHistoryCategory(2)} mode="out-in" @click="changeHistoryCategory(2)" name="ios">iOS</h6></transition>
@@ -275,9 +277,10 @@
                 <div class="history-background" v-if="isHistoryShown">
                   <div class="history-contents">
                     <br>
-                    <h4 class="history-company-title-atp">株式会社エーティ・プランニング</h4>
+                    <transition name="fade">
+                      <h4 v-if="isSelectedHistoryCategory(0)" class="history-company-title-atp">株式会社エーティ・プランニング</h4>
+                    </transition>
                     <div>
-                      
                       <transition name="fade">
                         <div v-if="isSelectedHistoryCategory(5)">
                           <?= $this->element('Portfolio/accordion' , [ "head"=>"Windows ActiveDirectory" , "info"=>"言語 : C++ , ShellScript<br>環境 : Windows Server Active Directory<br>人数 : 2人<br>期間 : 2013 年 5 月 ~ 2013 年 11 月" , "title"=>"省庁系ローカルネットワーク環境における<br>Active Directory テスト環境構築、及び実運用を想定した変更対応手順等の確立案件" , "body"=>"Windows Server 2008 R2 環境での Active Directory サーバの構築を担当しました。<br>グループポリシーの適用検証や組織改変対応、ldifde コマンドを用いた Active Directory 上のユーザ、グループ変更がメイン業務でした。<br><br>定期的に発生する大規模組織改変等に安全性、時間効率に問題を感じ csv データを基とした ldf ファイルの自動生成スクリプトを作成しました。" ]) ?>
@@ -296,7 +299,9 @@
                         </div>
                       </transition>
                     </div>
-                    <h4 class="history-company-title-rsa">Web / スマートフォン アプリ開発企業</h4>
+                    <transition name="fade">
+                      <h4 v-if="isSelectedHistoryCategory(0)" class="history-company-title-rsa">株式会社レンサ</h4>
+                    </transition>
                     <div>
                       <transition name="fade">
                         <div v-if="isSelectedHistoryCategory(6)">

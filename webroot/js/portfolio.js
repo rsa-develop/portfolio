@@ -29,6 +29,8 @@ new Vue({
         tab4ShowCount: 0,
         isHistoryShown: true ,
         selectedHistoryCategory: 0 ,
+        isHiddenHistoryCategories : true,
+        hiddenHistoryCategoriesButtonTitle : "←",
     },
     components: {
     },
@@ -38,6 +40,10 @@ new Vue({
     methods: {
         active: function(id) {
             return this.current == id
+        },
+        hiddenHistoryCategories() {
+            this.isHiddenHistoryCategories = !this.isHiddenHistoryCategories
+            this.hiddenHistoryCategoriesButtonTitle = this.isHiddenHistoryCategories ? "←" : "→"
         },
         changeTab: function(id) {
             this.current = id
