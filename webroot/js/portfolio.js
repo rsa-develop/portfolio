@@ -1,6 +1,4 @@
-
-
-new Vue({
+let mainTab = new Vue({
     el: '#mainTabs',
     data: {
         current: 1,
@@ -8,7 +6,11 @@ new Vue({
         treeShowCount: 0,
         showFuture: false,
         showInterest: false,
-        tab4ShowCount: 0
+        tab4ShowCount: 0,
+        isHistoryShown: true ,
+        selectedHistoryCategory: 0 ,
+        isHiddenHistoryCategories : true,
+        hiddenHistoryCategoriesButtonTitle : "←",
     },
     components: {
     },
@@ -19,9 +21,24 @@ new Vue({
         active: function(id) {
             return this.current == id
         },
+        hiddenHistoryCategories() {
+            this.isHiddenHistoryCategories = !this.isHiddenHistoryCategories
+            this.hiddenHistoryCategoriesButtonTitle = this.isHiddenHistoryCategories ? "←" : "→"
+        },
         changeTab: function(id) {
             this.current = id
             setTimeout(this.changeCompleation,10);
+        },
+        changeHistoryCategory: function( category ) {
+            this.selectedHistoryCategory = category
+            this.switchHistoryShown()
+            setTimeout( this.switchHistoryShown ,1000);
+        },
+        isSelectedHistoryCategory: function( category ) {
+            if( this.selectedHistoryCategory == 0 ) {
+                return true
+            }
+            return this.selectedHistoryCategory == category
         },
         prefShowAnimNumber: function( num ) {
             return this.treeShowCount >= num
@@ -29,12 +46,24 @@ new Vue({
         tab4ShowAnimPeriod: function( startNum , endNum ) {
             return startNum <= this.tab4ShowCount && this.tab4ShowCount < endNum
         },
+        switchHistoryShown() {
+            this.isHistoryShown = !this.isHistoryShown
+        },
         changeCompleation: function() {
             setTabContentHeight()
             scrollTo( 0 , 0 )
+
+            this.isHiddenHistoryCategories = true
+
             switch( this.current ) {
                 case 1: break;
-                case 2: break;
+                case 2: 
+                    setTimeout( function(){
+                        if ( !navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/i) ) {
+                            mainTab.isHiddenHistoryCategories = false
+                        }
+                    } , 1000);                
+                    break;
                 case 3: break;
                 case 4: 
                     window.scrollTo( 0 , 0 );
@@ -72,7 +101,7 @@ new Vue({
             }
 
             if( this.current == 4 ) {
-                this.tab4ShowCount = parseInt( this.scrollY / ( window.outerHeight / 2.5 ) )
+                this.tab4ShowCount = parseInt( this.scrollY / ( window.innerHeight / 2.5 ) )
             }
         }
     }
@@ -87,6 +116,8 @@ function setTabContentHeight() {
         }
     }
 }
+
+setTabContentHeight()
 window.addEventListener( 'resize', function() {
     setTabContentHeight()
 
@@ -95,10 +126,3 @@ window.addEventListener( 'resize', function() {
         tab4Content.style.height = (window.innerHeight - document.getElementsByClassName( "tab" )[0].clientHeight) + "px";
     }
 }, false );
-setTabContentHeight()
-
-window.onload = function() {
-    setTimeout(function(){
-        window.scrollTo(0,1);
-    }, 1);
-}
