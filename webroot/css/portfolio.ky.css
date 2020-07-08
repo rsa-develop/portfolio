@@ -104,8 +104,8 @@ body {
 
 .history-background {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#006400), color-stop(50%, #ff8c00), to(#ff8c00));
-  background-image: linear-gradient(#006400 0%, #ff8c00 50%, #ff8c00 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e66465), color-stop(50%, #9198e5), to(#9198e5));
+  background-image: linear-gradient(#e66465 0%, #9198e5 50%, #9198e5 100%);
 }
 
 .main-section {
