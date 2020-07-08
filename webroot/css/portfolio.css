@@ -234,15 +234,16 @@ body {
   width: 100%;
   height: calc( 100% - 55px );
   z-index: 100;
-  opacity: 0.5;
 }
 .show-history-categories {
   transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   transform: translateX(0px);
+  opacity: 0.5;
 }
 .hidden-history-categories {
   transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   transform: translateX(100%);
+  opacity: 0;
 }
 .hidden-history-categories-button {
   pointer-events: auto;
