@@ -51,11 +51,11 @@ body {
   outline:0;
 }
 .tab li:hover, .tab li:focus {
-  color: #0f4914;
-  border-bottom: 3px solid #0f4914;
+  color: #000000;
+  border-bottom: 3px solid #71cce7;
 }
 .tab li.active {
-  border-bottom: 3px solid #92D050;
+  border-bottom: 3px solid rgb(35, 74, 201);
 }
 
 .content {
@@ -181,11 +181,41 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(103, 112, 116);
+  font-size: 2em;/*文字サイズ2倍*/
+  font-weight: bold;
+}
+
+.stripe-black {
+  padding: 5px;
+  background-size: 5px 5px;
+  background-color: #000000;
+  background-image: linear-gradient(45deg,#000000 25%,transparent 25%,transparent 50%,#000000 50%,#ffffff 75%,transparent 75%,transparent);
+}
+
 .stripe-pink {
   padding: 2px;
   background-size: 2px 2px;
   background-color: #f800d7;
   background-image: linear-gradient(45deg,#eb11b4 25%,transparent 25%,transparent 50%,#104629 50%,#ffffff 75%,transparent 75%,transparent);
+}
+
+.stripe-pink-title {
+  padding: 2px;
+  background-size: 2px 2px;
+  background-color: #f800d7;
+  background-image: linear-gradient(45deg,#eb11b4 25%,transparent 25%,transparent 50%,#104629 50%,#ffffff 75%,transparent 75%,transparent);
+}
+
+.stripe-pink-inner-title {
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 2px;
 }
 
 .stripe-orange {
@@ -262,3 +292,4 @@ body {
   width: 100%;
   height: 100%;
 }
+

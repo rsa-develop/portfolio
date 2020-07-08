@@ -2,6 +2,7 @@
 <?= $this->Html->css('/css/portfolio.css') ?>
 <?= $this->Html->css('/css/portfolio.ky.css') ?>
 <?= $this->Html->css('/css/portfolio.animations.css') ?>
+<?= $this->Html->css('/css/portfolio.animations.ky.css') ?>
 <?= $this->Html->css('/css/components.css') ?>
 
 <script src="/js/vue.js"></script>
@@ -24,15 +25,20 @@
           <section :key="1" v-if="active(1)">
             <div class="tab-content">
               <div class="profile-top">
-                <div class="first">
-                  <p>
+                <!-- <div class="first">
+                  <p> -->
                     <!-- 開発をもっと楽しく、もっと先に。 -->
-                  </p>
-                </div>
+                  <!-- </p>
+                </div> -->
                 <!-- first -->
-                <div class="second">
+                <!-- <div class="second">
                   <p style="font-size:140%;">Kohei Yamamoto's Portfolio</p>
-                </div>
+                </div> -->
+                <!-- <div class="stripe-pink-title" style="margin: 0 10%; margin-top: 10%;"> -->
+                  <div class="stripe-pink-inner-title" style="margin: 2 5%; text-align: right;">
+                    <p style="font-size: 20px; padding: 80px">Kohei Yamamoto's Portfolio</p>
+                  </div>
+                <!-- </div> -->
                 <!-- /second -->
                 <div class="third">
                   <p style="font-size:120%;">
@@ -42,12 +48,21 @@
                   </p>
                 </div>
                 <!-- /third -->
+                <div class="stripe-black" style="margin: 0 35%; margin-top: 5%;">
+                  <div class="stripe-green-inner" style="text-align: left; padding: 10% 15%">
+                    <a href="#self-introduction" style="font-size:140%;">1.自己紹介</a><br><br>
+                    <a href="#strength" style="font-size:140%;">2.エンジニアとして得意なこと</a><br><br>
+                    <a href="#character" style="font-size:140%;">3.キャラクター</a><br><br>
+                    <a href="#career-vision" style="font-size:140%;">4.キャリアビジョン</a><br><br>
+                    <a href="#development" style="font-size:140%;">5.やってみたい開発</a>
+                  </div>
+                </div>
               </div>
               <!-- /profile-top -->
 
-              <div class="stripe-pink" style="margin: 0 10%; margin-top: 5%;">
+              <div class="stripe-pink" style="margin: 0 10%; margin-top: 10%;">
                   <div class="stripe-green-inner" style="text-align: center;">
-                    <p style="font-size:170%;">自己紹介</p>
+                    <h2 id="self-introduction" style="font-size:170%;">自己紹介</h2>
                   </div>
                 <!-- /stripe-blue-inner -->
                 </div>
@@ -58,13 +73,13 @@
                   小・中学校は地元の公立校に進学。有名私立中学を受験したものの、コテンパンに打ちのめされた事実を友人にひた隠しにしながら中学時代を過ごす。<br><br>
                   高校は佐賀県唐津市にある学校に進学。その過酷さから、毎月のように脱獄ならぬ脱寮者が出る寮で３年間生活し、忍耐力を身につける。<br><br>
                   大学から東京に上京。商学部でマーケティングを専攻しながら学生ビジネスコンテストに複数参加。そこでの功績を認められて大学総長賞を受賞する。サークル活動ではマレーシア人の友人に誘われて和太鼓サークルに入会。持ち前の顔の濃さで、その友人ではなく自分が海外留学生だと誤解される日々を過ごす。<br><br>
-                  大学卒業後は新卒で保険会社に入社し、営業として配属。持ち前のコミュニケーション力で支社一番の営業成績を上げる。その後、仕事で触れた最先端サービスからITの世界に魅せられエンジニアに転身。<br>
+                  大学卒業後は新卒で保険会社に入社し、営業として配属。自身の長所であるコミュニケーション力で支社一番の営業成績を挙げる。その後、仕事で触れた最先端サービスからITの世界に魅せられエンジニアに転身。<br>
                   現在に至る。
                 </p>
 
               <div class="stripe-green" style="margin: 0 10%; margin-top: 10%;">
                 <div class="stripe-green-inner" style="text-align: center;">
-                  <p style="font-size:170%;">エンジニアとして得意なこと</p>
+                  <h2 id="strength" style="font-size:170%;">エンジニアとして得意なこと</h2>
                 </div>
                 <!-- /stripe-green-inner -->
               </div>
@@ -87,7 +102,7 @@
 
               <div class="stripe-blue" style="margin: 0 10%; margin-top: 10%;">
                 <div class="stripe-blue-inner" style="text-align: center;">
-                  <p style="font-size:170%;">性格面</p>
+                  <h2 id="character" style="font-size:170%;">キャラクター</h2>
                 </div>
                 <!-- /stripe-blue-inner -->
               </div>
@@ -103,7 +118,7 @@
 
               <div class="stripe-orange" style="margin: 0 10%; margin-top: 10%;">
                 <div class="stripe-blue-inner" style="text-align: center;">
-                  <p style="font-size:170%;">キャリアビジョン</p>
+                  <h2 id="career-vision" style="font-size:170%;">キャリアビジョン</h2>
                 </div>
                 <!-- /stripe-blue-inner -->
               </div>
@@ -125,14 +140,19 @@
 
               <div class="stripe-red" style="margin: 0 10%; margin-top: 10%;">
                 <div class="stripe-blue-inner" style="text-align: center;">
-                  <p style="font-size:170%;">やってみたい開発</p>
+                  <h2 id="development" style="font-size:170%;">やってみたい開発</h2>
                 </div>
                 <!-- /stripe-blue-inner -->
               </div>
               <!-- /stripe-blue -->
 
               <p class="profile-text" style="font-size:140%; margin-top:5%;">
-                世の中のトレンドに則したサービスを作りたいです。<br><br>「新しい技術やサービスに触れることが好き」という自身の好奇心を開発にも生かしていきたいと考えています。<br><br>完全新規のプロジェクトや、触れたことのないライブラリを使った開発の際はとてもワクワクしながら取り組めています。<br>そのため、「新しいもの」かつ「世の中に必要とされているもの」を追い続けながら開発に関わりたいと思っております。
+                世の中のトレンドに則したサービスを作りたいです。
+                <br><br>「新しい技術やサービスに触れることが好き」という自身の好奇心を開発にも生かしていきたいと考えています。
+                <br><br>完全新規のプロジェクトや、触れたことのないライブラリを使った開発の際はとてもワクワクしながら取り組めています。
+                <br>また、昔からある技術についてもそれらが必要になる場面では柔軟に開発に組み込んでいくことが重要であるとも心得ております。
+                <br><br>これらを踏まえた上で、トレンドを意識しながら<span style="font-size:120%; font-weight: bold;">「世の中に必要とされているもの」</span>を追い続け、開発に携わりたいと思っている所存です。
+
 
               </p>
 
@@ -301,21 +321,23 @@
               <div class="tab-content" style="margin: 0 10px;">
                 <div style="margin-left:10px; margin-right:20px;">
                   <br>
-                  <!-- <h4 style="border-bottom: 1px solid #006e54;border-left: 10px solid #006e54;padding: 7px;">株式会社エーティ・プランニング</h4> -->
+                  <h4 style="border-bottom: 1px solid #006e54;border-left: 10px solid #006e54;padding: 7px;">Amazon FireTVアプリ開発</h4>
                   <div>
-                    <?= $this->element('Portfolio/accordion' , [ "head"=>"Web" , "info"=>"platform : Web<br>人数 : 1人 <br>期間 : 2019 年 11 月 ~ 12月 <br>言語 : Java" , "title"=>"Web ECサイト構築" , "body"=>"Java,HTML,CSSを用いてグルメECサイトを作成 <br>企画部分から開発、テスト、リリースの全行程を担当したほか、管理用機能ページの作成もしました。" ]) ?>
-                    <br>
+                    <?= $this->element('Portfolio/accordion' , [ "head"=>"FireTV" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 02 月 ~ 2020 年 04 月" , "title"=>"AmazonFireTVアプリケーション新規開発業務" , "body"=>" 自社 FireTV アプリ開発<br>アプリの新規開発から動作テスト、デバッグ対応、リリースまでの一連の流れを担当。<br>AmazonDeveloperを用いたアプリ登録や課金テスト、FCM導入によるプッシュ通知の実装も致しました。<br>レイアウト作成においては、API連携による動的レイアウトを作成したほか、リモコン操作に準じたフォーカス移動を実装しました。" ]) ?>
+                  </div>
+                  <h4 style="margin-top: 5%; border-bottom: 1px solid #ff8c00;border-left: 10px solid #ff8c00;padding: 7px;">Androidアプリ開発</h4>
+                  <div>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 01 月 ~ 2020 年 02 月" , "title"=>"Androidアプリ開発" , "body"=>"自社 Android アプリ開発<br>アプリの新規開発から動作テスト、デバッグ対応、リリースまでの一連の流れを担当。<br>GooglePlayへの登録やFCM導入によるプッシュ通知の実装等も致しました。" ]) ?>
                     <br>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 01 月 ~ 2020 年 05 月" , "title"=>"Android サブスクリプション型アプリケーション新規開発業務" , "body"=>"新規月額課金型アプリの開発業務、既存アプリの改修対応業務<br>サブスクリプション登録の有無を判断し、メンバー価格および通常価格の価格変動処理を実装。これらの処理を含む課金動作確認を担当しました。<br>また、新規モジュールの作成とアニメーション処理の実装などのレイアウト作成も行いました。" ]) ?>
-                  <!-- </div> -->
-                  <!-- <h4 style="border-bottom: 1px solid #ff8c00;border-left: 10px solid #ff8c00;padding: 7px;">Web / スマートフォン アプリ開発企業</h4> -->
-                  <!-- <div> -->
-                    <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 1人<br>期間 : 2020 年 02 月 ~ 2020 年 04 月" , "title"=>"AmazonFireTVアプリケーション新規開発業務" , "body"=>" 自社 FireTV アプリ開発<br>アプリの新規開発から動作テスト、デバッグ対応、リリースまでの一連の流れを担当。<br>AmazonDeveloperを用いたアプリ登録や課金テスト、FCM導入によるプッシュ通知の実装も致しました。<br>レイアウト作成においては、API連携による動的レイアウトを作成したほか、リモコン操作に準じたフォーカス移動を実装しました。" ]) ?>
                     <br>
                     <?= $this->element('Portfolio/accordion' , [ "head"=>"Android" , "info"=>"platform : Android<br>言語 : Kotlin <br>人数 : 3人<br>期間 : 2020 年 04 月 ~ 2020 年 05 月" , "title"=>"フルリモート 新規長期運用形 Android アプリケーションの開発業務" , "body"=>"月額サブスクリプション型 運用アプリの構築<br>フルリモート環境下での企画仕様書の読解および展開から、API準拠の動的レイアウト構築やアニメーション作成のほか、Realm DB構築等の開発業務を担当。<br>また、新人エンジニアへのタスク分配および進捗管理など、チームの指揮をとる形で連携を図り開発を進めました。" ]) ?>
-                    <br>
-                    <?= $this->element('Portfolio/accordion' , [ "head"=>"Web API" , "info"=>"platform : Web<br>人数 : 3人<br>Framework : Ruby on Rails<br>言語 : Ruby<br>期間 : 2020 年 05 月 ~ 現在" , "title"=>"Rails  API 運用、追加改修対応" , "body"=>"web / スマートフォンアプリ における多数のプラットフォームからアクセスする API の追加改修業務<br>API新規コンテンツ追加登録からテスト、公開を担当。<br>業務内ではymlファイルの追加やロジック作成、imagemagickを用いたShellScript作成も行なった。" ]) ?>
+                  </div>
+                  <h4 style="margin-top: 5%; border-bottom: 1px solid #ff0000;border-left: 10px solid #ff0000;padding: 7px;">Webアプリ開発</h4>
+                    <div>
+                      <?= $this->element('Portfolio/accordion' , [ "head"=>"Web" , "info"=>"platform : Web<br>人数 : 1人 <br>期間 : 2019 年 11 月 ~ 12月 <br>言語 : Java" , "title"=>"Web ECサイト構築" , "body"=>"Java,HTML,CSSを用いてグルメECサイトを作成 <br>企画部分から開発、テスト、リリースの全行程を担当したほか、管理用機能ページの作成もしました。" ]) ?>
+                      <br>
+                      <?= $this->element('Portfolio/accordion' , [ "head"=>"Web API" , "info"=>"platform : Web<br>人数 : 3人<br>Framework : Ruby on Rails<br>言語 : Ruby<br>期間 : 2020 年 05 月 ~ 現在" , "title"=>"Rails  API 運用、追加改修対応" , "body"=>"web / スマートフォンアプリ における多数のプラットフォームからアクセスする API の追加改修業務<br>API新規コンテンツ追加登録からテスト、公開を担当。<br>業務内ではymlファイルの追加やロジック作成、imagemagickを用いたShellScript作成も行なった。" ]) ?>
                     <!-- <br> -->
                     <!-- <?= $this->element('Portfolio/accordion' , [ "head"=>"Storage" , "info"=>"platform : Windows<br>人数 : 1人<br>期間 : 2018 年 5 月 ~ 2018 年 6 月" , "title"=>"社内ファイルサーバ構築" , "body"=>"クラウド環境で構築していたファイルサーバの維持費用が肥大化しており、<br>社内環境でファイルサーバを構築、外部からは VPN で接続するよう環境を整備しました。<br><br>Windows 10 をベースに環境であることからセッション上限が 20 となっていたため、タスクスケジューラで使用していないセッションを定期的に削除する等の対応も行いました。" ]) ?> -->
                     <!-- <br> -->
@@ -411,8 +433,8 @@
                     ---------------------------------------->
                     <div>
                       <transition name="fade">
-                        <div v-if="tab4ShowAnimPeriod(0,1)" style="width: 100%; top: 50%; bottom: 50%; color: #888;">
-                          <h1 style="text-align: center;">Please scroll</h1>
+                        <div v-if="tab4ShowAnimPeriod(0,2)" style="width: 100%; top: 50%; bottom: 50%; color: #888; background-color: black;">
+                          <h1 style="color: white; font-size: 120%; text-align: center;">Scroll Down<br><br>&#9660;</h1>
                         </div>
                       </transition>
                     </div>
@@ -423,21 +445,28 @@
                         </div>
                       </transition>
                     </div>
-                    <!-- /div -->
                     <div>
-                      <transition name="slide-left-rotate-fade">
-                        <div v-if="tab4ShowAnimPeriod(1,6)" style="left: 0; bottom: 0; width: 10vw; height: 10vw; background-color: blue;">
+                      <transition name="slide-right-fade-large">
+                        <div v-if="tab4ShowAnimPeriod(2,6)" style="right: 0; top:0; width: 100%; height: 5vw; background-color: black;">
                         </div>
                       </transition>
                     </div>
                     <!-- /div -->
+                    <!-- <div>
+                      <transition name="slide-left-rotate-fade">
+                        <div v-if="tab4ShowAnimPeriod(1,6)" style="left: 0; bottom: 0; width: 10vw; height: 10vw; background-color: blue;">
+                        </div>
+                      </transition>
+                    </div> -->
+                    <!-- /div -->
                     <div>
                       <transition name="fade">
                         <div v-if="tab4ShowAnimPeriod(3,6)" style="width: 100%; top: 30%; bottom: 70%; color: #888;">
-                          <h1 style="text-align: center; font-size: 200%;">【趣味、資格・実績】</h1>
+                          <!-- <h1 style="text-align: center; font-size: 200%;">【趣味、資格・実績】</h1> -->
                           <!-- <h2 style="text-align: center; font-size: 150%;">◆やってみたい開発</h2> -->
-                          <h2 style="text-align: center; font-size: 150%;">◆趣味</h2>
-                          <h2 style="text-align: center; font-size: 150%;">◆資格・実績</h2>
+                          <h2 style="text-align: center; font-size: 150%;">◆趣味</h2><br>
+                          <h2 style="text-align: center; font-size: 150%;">◆資格・実績</h2><br>
+                          <h2 style="text-align: center; font-size: 150%;">◆最後に</h2>
                         </div>
                       </transition>
                     </div>
@@ -506,28 +535,30 @@
                         page3
                     ---------------------------------------->
 
+                    <!-- <div>
+                      <transition name="fade">
+                        <div v-if="tab4ShowAnimPeriod(7,16)" style="width: 100%; height: 100%; background-color: #d2b48c;"></div>
+                      </transition>
+                    </div> -->
+                    <!-- /div -->
+
                     <div>
                       <transition name="fade">
-                        <div v-if="tab4ShowAnimPeriod(7,11)" style="width: 100%; height: 100%; background-color: #d2b48c;"></div>
+                        <div v-if="tab4ShowAnimPeriod(7,16)" style="width: 100%; height: 100%; background-color: black; clip-path: polygon(0% 100%, 100% 100%, 100% 0%);"></div>
                       </transition>
                     </div>
                     <!-- /div -->
 
                     <div>
-                      <transition name="fade">
-                        <div v-if="tab4ShowAnimPeriod(9,16)" style="width: 100%; height: 100%; background-color: #8b4513; clip-path: polygon(100% 0, 0 0, 0 100%);"></div>
-                      </transition>
-                    </div>
-                    <!-- /div -->
-
-                    <div>
-                      <transition name="slide-flat-rotate-fade">
-                        <div v-if="tab4ShowAnimPeriod(10,16)" style="left:25vw; top:3vh">
-                          <p style="text-align: left;">
-                            <span style="font-size:200%; border-bottom: 2px solid white; color: white;">
-                              趣味
-                            </span>
-                          </p>
+                      <transition name="slide-right-fade">
+                        <div v-if="tab4ShowAnimPeriod(10,16)" style="top:3vh">
+                          <div style="background-color: black; margin: 2 20%; text-align: right; height: 15%; width:25%; clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);">
+                            <p style="margin-right: 30%">
+                              <span style="font-size:240%; color: white;">
+                                趣味
+                              </span>
+                            </p>
+                          </div>
                         </div>
                       </transition>
                     </div>
@@ -535,18 +566,19 @@
 
                     <div>
                       <transition name="fade">
-                        <div v-if="tab4ShowAnimPeriod(12,16)" style="left:30vw; top: 30vh;">
-                          <div style="font-size: 120%; width: 60vw; height: auto; color: white; background-color: #6668; border-radius: 10px; padding: 10px;">
+                        <div v-if="tab4ShowAnimPeriod(12,16)" style="left:25vw; top: 15vh;">
+                          <div style="width: 60vw; height: auto; color: white; background-color: #6668; border-radius: 10px; padding: 10px;">
                             ◆読書<br><br>
                             ビジネス書や心理学、哲学書を中心にマンガもよく読みます。毎週土日は本屋に行って２冊以上本を読むようにしています。<br>
-                            <br><br>
+                            <br>
                             ◆動画編集<br><br>
-                            平日の夜は、Adobeソフトを使って動画編集とアニメーション作成をしています。まだまだ始めたばかりですが、Youtube動画編集や結婚式ムービー作成などの依頼を受注しています。<br>
+                            平日の夜は、動画編集とアニメーション作成をしています。まだまだ始めたばかりですが、Youtube動画編集や結婚式ムービー作成などの依頼を受注しています。<br>
+                            <br>
                             ◆サッカー<br><br>
-                            小学校・高校ではサッカー部に所属していました。最近プレイはできていませんが、海外リーグや代表戦を観戦するのも好きです。<br>
-                            <br><br>
+                            小学校・高校ではサッカー部に所属していました。最近はプレイするよりも観戦の方が好きです。<br>
+                            <br>
                             ◆旅行<br><br>
-                            大学時代にはバックパッカーをしていたほど旅行が好きです。社会人になってから海外旅行には行けていませんが、いつかタイのソンクランに参加したいと思っています。
+                            大学時代にはバックパッカーをしていたほど旅行が好きです。社会人になってから海外旅行に行けていませんが、いつかタイのソンクランに参加したいと思っています。
                           </div>
                         </div>
                       </transition>
@@ -557,28 +589,52 @@
                         page4
                     ---------------------------------------->
 
-                    <div style="pointer-events: none;">
+                    <!-- <div style="pointer-events: none;">
                       <transition name="slide-left-fade-large">
                         <div v-if="tab4ShowAnimPeriod(17,22)" style="width: 100%; height: 100%; background-color: #808000;"></div>
                       </transition>
-                    </div> 
+                    </div>  -->
                     <!-- /div -->
+
+                    <div>
+                      <transition name="slide-left-rotate-fade">
+                        <div v-if="tab4ShowAnimPeriod(17,22)" style="left: 0; top: 0; width: 10vw; height: 10vw; background-color: black;">
+                        </div>
+                      </transition>
+                    </div>
+                    <div>
+                      <transition name="slide-right-rotate-fade">
+                        <div v-if="tab4ShowAnimPeriod(17,22)" style="right: 0; bottom: 0; width: 10vw; height: 10vw; background-color: black;">
+                        </div>
+                      </transition>
+                    </div>
+                    <div>
+                      <transition name="slide-down-fade-large">
+                        <div v-if="tab4ShowAnimPeriod(18,22)" style="left: 0; top:0; width: 10vw; height: 100%; background-color: black;">
+                        </div>
+                      </transition>
+                    </div>
+                    <div>
+                      <transition name="slide-up-fade-large">
+                        <div v-if="tab4ShowAnimPeriod(18,22)" style="right: 0; bottom:0; width: 10vw; height: 100%; background-color: black;">
+                        </div>
+                      </transition>
+                    </div>
 
                     <div style="pointer-events: none;">
                       <transition name="fade">
                         <div v-if="tab4ShowAnimPeriod(19,22)" style="top: 20vh;">
                           <p style="text-align: center;">
-                            <span style="font-size:200%; border-bottom: 2px solid white; color: white;">
+                            <span style="font-size:200%; border-bottom: 4px solid black; color: black;">
                               資格・実績
                             </span>
                           </p>
                           <p style="text-align: center;">
-                            <span style="font-size:120%; color: white; margin: 20px;">
+                            <span style="font-size:140%; color: black; margin: 20px;">
                               <br>
                               ・普通自動車免許<br><br>
                               ・ライフコンサルタント<br><br>
-                              ・第６回観光論文コンテスト<br><br>
-                              ・観光庁長官賞受賞（最優秀賞）<br><br>
+                              ・第６回観光論文コンテスト 観光庁長官賞受賞（最優秀賞）<br><br>
                               ・L’oreal Brandstorm 世界大会出場<br><br>
                               ・早稲田大学文化賞<br>
                             </span>
@@ -598,14 +654,14 @@
 
                     <div style="pointer-events: none;">
                       <transition name="fade">
-                        <div v-if="tab4ShowAnimPeriod(23,100)" style="top: 20vh;">
+                        <div v-if="tab4ShowAnimPeriod(23,100)" style="top: 13vh;">
                           <p style="text-align: center;">
                             <span style="font-size:200%; border-bottom: 2px solid white; color: white;">
                               最後に
                             </span>
                           </p>
                           <p style="text-align: center;">
-                            <span style="font-size:120%; color: white; margin: 20px;">
+                            <span style="font-size:140%; color: white; margin: 20px;">
                               <br>
                               人生においては、仕事にかける時間がその大半を占めています。<br>
                               だからこそ、仕事は楽しいものでなければならないと感じると同時に、仕事を通じて多くの人に影響を与えたいと思っています。<br>
@@ -613,10 +669,8 @@
                               <br>
                               <br>
                               本ポートフォリオは以上となります。<br>
-                              ここまでご覧いただき誠にありがとうございました。<br>
-                              <br>
                               ご興味を持っていただけましたら幸いです。<br>
-                              何卒よろしくお願いいたします。<br>
+                              ここまでご覧いただきありがとうございました。<br>
                               <br>
                               ~ Kohei Yamamoto ~
                             </span>
